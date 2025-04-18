@@ -23,8 +23,7 @@ loan_intent_mapping = {
 previous_loan_defaults_mapping = {'No': 0, 'Yes': 1}
 
 def main():
-    st.title("📊 Aplikasi Prediksi Status Pinjaman")
-    st.write("Masukkan data untuk memprediksi apakah pinjaman akan disetujui (1) atau ditolak (0).")
+    st.title("Loan Prediction Application")
 
     # Input dari user
     person_age = st.number_input("person_age", min_value=18, max_value=100, value=25)
