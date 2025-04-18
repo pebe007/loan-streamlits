@@ -66,12 +66,12 @@ def main():
         return
 
     # Prediksi
-    if st.button("Prediksi loan_status"):
+    if st.button("Predict"):
         hasil = model.predict(input_data)
         if hasil[0] == 1:
-            st.success("✅ loan_status: Disetujui (1)")
+            st.success("loan_status: Disetujui (1)")
         else:
-            st.warning("❌ loan_status: Ditolak (0)")
+            st.warning("loan_status: Ditolak (0)")
 
 if __name__ == '__main__':
     main()
